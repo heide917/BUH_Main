@@ -14,24 +14,54 @@ namespace BUH.Domain.Services.Concrete
     public class FirstRunService : IFirstRunService
     {
         private readonly IConfigProvider _сonfigProvider;
-        private readonly ICategorieRepository _сategorieRepository;
         private readonly IAccountRepository _accountRepository;
+        private readonly ICategorieRepository _сategorieRepository;
         private readonly IClassRepository _classRepository;
+        private readonly IContractRepository _contractRepository;
+        private readonly IInventoryRepository _inventoryRepository;
+        private readonly IJournalRepository _journalRepository;
+        private readonly IPersonRepository _personRepository;
+        private readonly IProviderRepository _providerRepository;
+        private readonly ISourceRepository _sourceRepository;
+        private readonly ISubTransactionRepository _subTransactionRepository;
+        private readonly ITransactionRepository _transactionRepository;
+        private readonly IUserRepository _userRepository;
 
         public FirstRunService(
             IConfigProvider сonfigProvider,
-            ICategorieRepository сategorieRepository,
             IAccountRepository accountRepository,
-            IClassRepository classRepository)
+            ICategorieRepository сategorieRepository,
+            IClassRepository classRepository,
+            IContractRepository contractRepository,
+            IInventoryRepository inventoryRepository,
+            IJournalRepository journalRepository,
+            IPersonRepository personRepository,
+            IProviderRepository providerRepository,
+            ISourceRepository sourceRepository,
+            ISubTransactionRepository subTransactionRepository,
+            ITransactionRepository transactionRepository,
+            IUserRepository userRepository)
+
         {
             _сonfigProvider = сonfigProvider;
-            _сategorieRepository = сategorieRepository;
             _accountRepository = accountRepository;
+            _сategorieRepository = сategorieRepository;
             _classRepository = classRepository;
+            _contractRepository = contractRepository;
+            _inventoryRepository = inventoryRepository;
+            _journalRepository = journalRepository;
+            _personRepository = personRepository;
+            _providerRepository = providerRepository;
+            _sourceRepository = sourceRepository;
+            _subTransactionRepository = subTransactionRepository;
+            _transactionRepository = transactionRepository;
+            _userRepository = userRepository;
         }
 
         public void FillDefaultDataBase()
         {
+            FillSourceTable();
+
             int planId;
             string plandIdFomConfig = _сonfigProvider.GetAppKey("Plan");
             var isParsed = Int32.TryParse(plandIdFomConfig, out planId);
@@ -59,6 +89,23 @@ namespace BUH.Domain.Services.Concrete
             }
 
         }
+
+        #region Заполнение таблицы источников дохода
+
+        private void FillSourceTable()
+        {
+            _sourceRepository.Insert(new Source()
+              {
+                Number = "1",
+                Name = "Бюджет",
+                Description = ""
+              });
+
+
+        }
+             
+
+        #endregion
 
         #region Заполнение таблиц согласно плану № 291
 
