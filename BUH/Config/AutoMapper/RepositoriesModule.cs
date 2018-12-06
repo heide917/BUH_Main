@@ -14,6 +14,13 @@ namespace BUH.Config.AutoMapper
             Bind<ITransactionRepository>().To<TransactionRepository>();
             Bind<IJournalRepository>().To<JournalRepository>();
             Bind<ISourceRepository>().To<SourceRepository>();
+            Bind<IContractRepository>().To<ContractRepository>();
+            Bind<IInventoryRepository>().To<InentoryRepository>();
+            Bind<IPersonRepository>().To<PersonRepository>();
+            Bind<IProviderRepository>().To<ProviderRepository>();
+            Bind<ISubTransactionRepository>().To<SubTransactionRepository>();
+            Bind<IUserRepository>().To<UserRepository>();
+
         }
     }
 }
