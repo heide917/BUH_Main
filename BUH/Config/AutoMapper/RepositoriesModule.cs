@@ -20,6 +20,7 @@ namespace BUH.Config.AutoMapper
             Bind<IProviderRepository>().To<ProviderRepository>();
             Bind<ISubTransactionRepository>().To<SubTransactionRepository>();
             Bind<IUserRepository>().To<UserRepository>();
+            Bind<IKekRepository>().To<KekRepository>();
 
         }
     }

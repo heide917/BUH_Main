@@ -64,6 +64,7 @@ namespace BUH.Domain.Services.Concrete
         public void FillDefaultDataBase()
         {
             FillSourceTable();
+            FillKekTable();
 
             int planId;
             string plandIdFomConfig = _сonfigProvider.GetAppKey("Plan");
