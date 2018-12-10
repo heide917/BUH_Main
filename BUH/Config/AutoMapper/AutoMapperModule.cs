@@ -29,6 +29,7 @@ namespace BUH.Config.AutoMapper
                 cfg.AddProfile<SubTransactionProfile>();
                 cfg.AddProfile<TransactionProfile>();
                 cfg.AddProfile<UserProfile>();
+                cfg.AddProfile<KekProfile>();
             });
 
             config.AssertConfigurationIsValid();

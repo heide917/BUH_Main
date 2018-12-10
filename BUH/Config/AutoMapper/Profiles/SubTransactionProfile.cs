@@ -15,6 +15,8 @@ namespace BUH.Config.AutoMapper.Profiles
                 .ReverseMap()
                 .ForMember(x => x.Debet, y => y.Ignore())
                 .ForMember(x => x.Kredit, y => y.Ignore())
+                .ForMember(x => x.KekDebet, y => y.Ignore())
+                .ForMember(x => x.KekKredit, y => y.Ignore())
                 .ForMember(x => x.Transaction, y => y.Ignore())
                 .ForMember(x => x.Inventory, y => y.Ignore());
         }

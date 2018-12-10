@@ -43,6 +43,8 @@ namespace BUH.DAL
 
         public DbSet<User> Users { get; set; }
 
+        public DbSet<Kek> Keks { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new AccountMap());
@@ -57,6 +59,7 @@ namespace BUH.DAL
             modelBuilder.Configurations.Add(new SubTransactionMap());
             modelBuilder.Configurations.Add(new TransactionMap());
             modelBuilder.Configurations.Add(new UserMap());
+            modelBuilder.Configurations.Add(new KekMap());
         }
     }
 }

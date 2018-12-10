@@ -53,6 +53,7 @@
     <Compile Include="Models\Contract.cs" />
     <Compile Include="Models\Inventory.cs" />
     <Compile Include="Models\Journal.cs" />
+    <Compile Include="Models\Kek.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Provider.cs" />
     <Compile Include="Models\Source.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Repositories\Base\IEntityRepository.cs" />
     <Compile Include="Repositories\IContractRepository.cs" />
     <Compile Include="Repositories\IInventoryRepository.cs" />
+    <Compile Include="Repositories\IKekRepository.cs" />
     <Compile Include="Repositories\IPersonRepository.cs" />
     <Compile Include="Repositories\IProviderRepository.cs" />
     <Compile Include="Repositories\ISourceRepository.cs" />

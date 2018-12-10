@@ -29,5 +29,14 @@ namespace BUH.DAL.Models
         public int InventoryId { get; set; }
 
         public virtual Inventory Inventory { get; set; }
+
+        public virtual Kek KekDebet { get; set; }
+
+        public int KekDebetId { get; set; }
+
+        public virtual Kek KekKredit { get; set; }
+
+        public int KekKreditId { get; set; }
+
     }
 }

@@ -30,6 +30,14 @@ namespace BUH.DAL.Models.Mapping
                 .WithMany(y => y.SubTransactions)
                 .HasForeignKey(x => x.InventoryId)
                 .WillCascadeOnDelete(false);
+            this.HasRequired(x => x.KekDebet)
+              .WithMany(y => y.SubTransactionsKekDebet)
+              .HasForeignKey(x => x.KekDebetId)
+              .WillCascadeOnDelete(false);
+            this.HasRequired(x => x.KekKredit)
+                .WithMany(y => y.SubTransactionsKekKredit)
+                .HasForeignKey(x => x.KekKreditId)
+                .WillCascadeOnDelete(false);
         }
     }
 }

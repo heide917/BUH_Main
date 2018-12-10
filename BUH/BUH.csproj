@@ -93,6 +93,7 @@
     </ApplicationDefinition>
     <Compile Include="Config\AutoMapper\Profiles\ContractProfile.cs" />
     <Compile Include="Config\AutoMapper\Profiles\InventoryProfile.cs" />
+    <Compile Include="Config\AutoMapper\Profiles\KekProfile.cs" />
     <Compile Include="Config\AutoMapper\Profiles\PersonProfile.cs" />
     <Compile Include="Config\AutoMapper\Profiles\ProviderProfile.cs" />
     <Compile Include="Config\AutoMapper\Profiles\SourceProfile.cs" />

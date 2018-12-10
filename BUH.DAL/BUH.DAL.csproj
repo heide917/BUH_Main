@@ -56,9 +56,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUHContext.cs" />
+    <Compile Include="Models\Kek.cs" />
     <Compile Include="Models\Mapping\ClassMap.cs" />
     <Compile Include="Models\Mapping\ContractMap.cs" />
     <Compile Include="Models\Mapping\InventoryMap.cs" />
+    <Compile Include="Models\Mapping\KekMap.cs" />
     <Compile Include="Models\Mapping\ProviderMap.cs" />
     <Compile Include="Models\Mapping\SourceMap.cs" />
     <Compile Include="Models\Mapping\JournalMap.cs" />
@@ -86,6 +88,7 @@
     <Compile Include="Repositories\ContractRepository.cs" />
     <Compile Include="Repositories\InventoryRepository.cs" />
     <Compile Include="Repositories\IPersonRepository.cs" />
+    <Compile Include="Repositories\KekRepository.cs" />
     <Compile Include="Repositories\ProviderRepository.cs" />
     <Compile Include="Repositories\SourceRepository.cs" />
     <Compile Include="Repositories\JournalRepositpy.cs" />
