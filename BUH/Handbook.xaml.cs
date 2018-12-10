@@ -11,14 +11,14 @@ using System.Windows;
 
 namespace BUH
 {
-    public partial class MainWindow : Window
+    public partial class Handbook : Window
     {
-        public MainWindow(
-            IAccountRepository accountRepository,
+        public Handbook(
+            IKekRepository kekRepository,
             IFirstRunService firstRunService)
         {
             InitializeComponent();
-            DataContext = new MainWindowViewModel(accountRepository, firstRunService);
+            DataContext = new HandbookViewModel(kekRepository, firstRunService);
         }
 
         private void Menu_Click(object sender, RoutedEventArgs e)

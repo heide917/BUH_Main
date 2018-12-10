@@ -55,6 +55,7 @@ namespace BUH.ViewModels
 
             WindowLoadedCommand = new RelayCommand(OnFirstRun);
             LoadListCommand = new RelayCommand(FillListView, CanLoadList);
+
         }
 
         #endregion

@@ -1,11 +1,11 @@
-﻿<Window x:Class="BUH.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:BUH"
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+    x:Class="BUH.MainWindow"
         mc:Ignorable="d"
-        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
         Title="MainWindow" Height="600" Width="800">
 
     <i:Interaction.Triggers>
@@ -22,17 +22,16 @@
         <Button Grid.Row="0"
                 Width="140" 
                 Height="22" 
-                Margin="10" 
+                Margin="10,20,0,27" 
                 HorizontalAlignment="Left"
-                Command="{Binding LoadListCommand}">Вывести счета на экран</Button>
-        <ListView 
-            Grid.Row="1"
-            Margin="10" 
+                Command="{Binding LoadListCommand}" Content="Вывести счета на экран"/>
+        <ListView
+            Margin="10,53,10,36" 
             Height="Auto"
             VerticalContentAlignment="Top"  
             ScrollViewer.VerticalScrollBarVisibility="Visible"
             ScrollViewer.CanContentScroll="False"
-            ItemsSource="{Binding Accounts}">
+            ItemsSource="{Binding Accounts}" Grid.RowSpan="2">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Номер"  
@@ -55,7 +54,46 @@
                     <i:InvokeCommandAction Command="{Binding LoadListCompletedCommand}" />
                 </i:EventTrigger>
             </i:Interaction.Triggers>
-            
+
         </ListView>
+
+        <!--<Menu Height="22" VerticalAlignment="Top" Margin="155,20,472,0">
+            <MenuItem Header="Отчеты">
+                <MenuItem Header="Главная" />
+                <MenuItem Header="Ордера" >
+                    <MenuItem Header="1 Ордер"/>
+                    <MenuItem Header="2 Ордер" />
+                    <MenuItem Header="3 Ордер" />
+                    <MenuItem Header="4 Ордер" />
+                    <MenuItem Header="5 Ордер" />
+                    <MenuItem Header="6 Ордер" />
+                    <MenuItem Header="7 Ордер" />
+                    <MenuItem Header="8 Ордер" />
+                    <MenuItem Header="9 Ордер" />
+                    <MenuItem Header="10 Ордер" />
+                    <MenuItem Header="11 Ордер" />
+                    <MenuItem Header="12 Ордер" />
+                    <MenuItem Header="13 Ордер" />
+                    <MenuItem Header="14 Ордер" />
+                    <MenuItem Header="15 Ордер" />
+                    <MenuItem Header="16 Ордер" />
+                    <MenuItem Header="17 Ордер" />
+                </MenuItem>
+                <MenuItem Header="Прочее" >
+                    <MenuItem Header="Инвентаризация"/>
+                    <MenuItem Header="Износ" />
+                  </MenuItem>
+                 
+                
+            </MenuItem>
+            <MenuItem Header="Справочники" >
+                <MenuItem Header="Счета" />
+                <MenuItem Header="КЕК"/>
+                <MenuItem Header="Поставщики"/>
+                <MenuItem Header="Материально ответсвенные лица" />
+            </MenuItem>
+        </Menu>-->
+
+
     </Grid>
 </Window>
