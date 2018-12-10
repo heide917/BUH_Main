@@ -26,7 +26,8 @@ namespace BUH.Domain.Services.Concrete
         private readonly ISubTransactionRepository _subTransactionRepository;
         private readonly ITransactionRepository _transactionRepository;
         private readonly IUserRepository _userRepository;
-
+        private readonly IKekRepository _kekRepository;
+        
         public FirstRunService(
             IConfigProvider сonfigProvider,
             IAccountRepository accountRepository,
@@ -40,7 +41,8 @@ namespace BUH.Domain.Services.Concrete
             ISourceRepository sourceRepository,
             ISubTransactionRepository subTransactionRepository,
             ITransactionRepository transactionRepository,
-            IUserRepository userRepository)
+            IUserRepository userRepository,
+            IKekRepository kekRepository)
 
         {
             _сonfigProvider = сonfigProvider;
@@ -56,6 +58,7 @@ namespace BUH.Domain.Services.Concrete
             _subTransactionRepository = subTransactionRepository;
             _transactionRepository = transactionRepository;
             _userRepository = userRepository;
+            _kekRepository = kekRepository;
         }
 
         public void FillDefaultDataBase()
@@ -90,6 +93,416 @@ namespace BUH.Domain.Services.Concrete
 
         }
 
+        #region Заполнение таблицы КЕКов
+
+        private void FillKekTable()
+        {
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2000",
+                Name = "Поточні видатки",
+                Discription = ""
+            });
+
+             _kekRepository.Insert(new Kek()
+            {
+                Number = "2100",
+                Name = "Оплата праці і нарахування на заробітну плату",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2110",
+                Name = "Оплата прац",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2111",
+                Name = "Заробітна плата",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2112",
+                Name = "Грошове забезпечення військовослужбовців",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2120",
+                Name = "Нарахування на оплату праці",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2200",
+                Name = "Використання товарів і послуг",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2210",
+                Name = "Предмети, матеріали, обладнання та інвентар",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2220",
+                Name = "Медикаменти та перев'язувальні матеріали",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2230",
+                Name = "Продукти харчування",
+                Discription = ""
+            });
+
+             _kekRepository.Insert(new Kek()
+            {
+                Number = "2240",
+                Name = "Оплата послуг (крім комунальних)",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2250",
+                Name = "Видатки на відрядження",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2260",
+                Name = "Видатки та заходи спеціального призначення",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2270",
+                Name = "Оплата комунальних послуг та енергоносіїв",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2271",
+                Name = "Оплата теплопостачання",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2272",
+                Name = "Оплата водопостачання та водовідведення",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2273",
+                Name = "Оплата електроенергії",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2274",
+                Name = "Оплата природного газу",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2275",
+                Name = "Оплата інших енергоносіїв",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2276",
+                Name = "Оплата енергосервісу",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2280",
+                Name = "Дослідження і розробки, окремі заходи по реалізації державних (регіональних)програм",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2281",
+                Name = "Дослідження і розробки, окремі заходи розвитку по реалізації державних(регіональних) програм",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2282",
+                Name = "Окремі заходи по реалізації державних (регіональних) програм, не віднесені до заходів розвитку",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2400",
+                Name = "Обслуговування боргових зобов'язань",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2410",
+                Name = "Обслуговування внутрішніх боргових зобов'язань",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2420",
+                Name = "Обслуговування зовнішніх боргових зобов'язань",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2600",
+                Name = "Поточні трансферти",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2610",
+                Name = "Субсидії та поточні трансферти підприємствам (установам, організаціям)",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2620",
+                Name = "Поточні трансферти органам державного управління інших рівнів",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2630",
+                Name = "Поточні трансферти урядам іноземних держав та міжнародним організаціям",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2700",
+                Name = "Соціальне забезпечення",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2710",
+                Name = "Виплата пенсій і допомоги",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2720",
+                Name = "Стипендії",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2730",
+                Name = "Інші виплати населенню",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2800",
+                Name = "Інші поточні видатки",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "2900",
+                Name = "Позицію виключено",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3000",
+                Name = "Капітальні видатки",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3100",
+                Name = "Придбання основного капіталу",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3110",
+                Name = "Придбання обладнання і предметів довгострокового користування",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3120",
+                Name = "Капітальне будівництво (придбання)",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3121",
+                Name = "Капітальне будівництво (придбання) житла",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3122",
+                Name = "Капітальне будівництво (придбання) інших об'єктів",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3130",
+                Name = "Капітальний ремонт",
+                Discription = ""
+            });
+
+             _kekRepository.Insert(new Kek()
+            {
+                Number = "3131",
+                Name = "Капітальний ремонт житлового фонду (приміщень)",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3132",
+                Name = "Капітальний ремонт інших об'єктів",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3140",
+                Name = "Реконструкція та реставрація",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3141",
+                Name = "Реконструкція житлового фонду (приміщень)",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3142",
+                Name = "Реконструкція та реставрація інших об'єктів",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3143",
+                Name = "Реставрація пам'яток культури, історії та архітектури",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3150",
+                Name = "Створення державних запасів і резервів",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3160",
+                Name = "Придбання землі та нематеріальних активів",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3200",
+                Name = "Капітальні трансферти",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3210",
+                Name = "Капітальні трансферти підприємствам (установам, організаціям)",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3220",
+                Name = "Капітальні трансферти підприємствам (установам, організаціям)",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3230",
+                Name = "Капітальні трансферти урядам іноземних держав та міжнародним організаціям",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "3240",
+                Name = "Капітальні трансферти населенню",
+                Discription = ""
+            });
+
+            _kekRepository.Insert(new Kek()
+            {
+                Number = "9000",
+                Name = "Нерозподілені видатки",
+                Discription = ""
+            });
+                        
+        }
+
+
+
+
+        #endregion
+
         #region Заполнение таблицы источников дохода
 
         private void FillSourceTable()
@@ -100,8 +513,49 @@ namespace BUH.Domain.Services.Concrete
                 Name = "Бюджет",
                 Description = ""
               });
+            
+              _sourceRepository.Insert(new Source()
+              {
+                Number = "2",
+                Name = "Спецсчет",
+                Description = ""
+              });
 
+             _sourceRepository.Insert(new Source()
+              {
+                Number = "3",
+                Name = "Поручения",
+                Description = ""
+              });
 
+            _sourceRepository.Insert(new Source()
+              {
+                Number = "4",
+                Name = "Безвозмездно",
+                Description = ""
+              });
+
+            _sourceRepository.Insert(new Source()
+              {
+                Number = "5",
+                Name = "Прочее",
+                Description = ""
+              });
+
+             _sourceRepository.Insert(new Source()
+              {
+                Number = "6",
+                Name = "Валюта",
+                Description = ""
+              });
+
+            _sourceRepository.Insert(new Source()
+              {
+                Number = "7",
+                Name = "Программы",
+                Description = ""
+              });
+                                          
         }
              
 
