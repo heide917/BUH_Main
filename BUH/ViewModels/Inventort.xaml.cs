@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace BUH.ViewModels
 {
     /// <summary>
-    /// Логика взаимодействия для Window3.xaml
+    /// Логика взаимодействия для Inventort.xaml
     /// </summary>
-    public partial class Window3 : Window
+    public partial class Inventort : Window
     {
-        public Window3()
+        public Inventort()
         {
             InitializeComponent();
         }

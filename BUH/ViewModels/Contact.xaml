@@ -1,0 +1,26 @@
+﻿<Window x:Class="BUH.ViewModels.Contact"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BUH.ViewModels"
+        mc:Ignorable="d"
+        Title="Договора" Height="270" Width="800">
+    <Grid>
+        <Label Content="Поставщик" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20"/>
+        <Label Content="Номер договора" HorizontalAlignment="Left" Margin="30,60,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Times New Roman"/>
+        <Label Content="Предмет договора" HorizontalAlignment="Left" Margin="30,90,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Times New Roman"/>
+        <Label Content="Дата начала" HorizontalAlignment="Left" Margin="30,120,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20"/>
+        <Label Content="Дата окончания" HorizontalAlignment="Left" Margin="30,150,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20"/>
+        <ListBox HorizontalAlignment="Left" Height="30" Margin="200,30,0,0" VerticalAlignment="Top" Width="395" FontFamily="Times New Roman" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="200,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Times New Roman" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="200,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="570" FontSize="20" FontFamily="Times New Roman"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="200,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Times New Roman" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="200,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Times New Roman" FontSize="20"/>
+
+
+
+
+
+    </Grid>
+</Window>

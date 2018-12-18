@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace BUH.ViewModels
 {
     /// <summary>
-    /// Логика взаимодействия для Window1.xaml
+    /// Логика взаимодействия для Contact.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Contact : Window
     {
-        public Window1()
+        public Contact()
         {
             InitializeComponent();
         }

@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace BUH.ViewModels
 {
     /// <summary>
-    /// Логика взаимодействия для Window2.xaml
+    /// Логика взаимодействия для Provider.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class Provider : Window
     {
-        public Window2()
+        public Provider()
         {
             InitializeComponent();
         }

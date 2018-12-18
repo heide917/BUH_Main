@@ -1,0 +1,39 @@
+﻿<Window x:Class="BUH.ViewModels.Provider"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BUH.ViewModels"
+        mc:Ignorable="d"
+        Title="Поставщикr" Height="400" Width="800">
+    <Grid>
+        <Label Content="Тип поставщика" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
+        <Label Content="Название организации" HorizontalAlignment="Left" Margin="20,50,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
+        <Label Content="ОКПО" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
+        <Label Content="Ф.И.О." HorizontalAlignment="Left" Margin="20,110,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
+        <Label Content="Номер свидетельства" HorizontalAlignment="Left" Margin="20,140,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
+        <Label Content="Банк" HorizontalAlignment="Left" Margin="20,170,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
+        <Label Content="Р/счет" HorizontalAlignment="Left" Margin="20,200,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
+        <Label Content="ДОГОВОРА" HorizontalAlignment="Left" Margin="20,255,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20"/>
+        <Label Content="ТМЦ" HorizontalAlignment="Left" Margin="20,290  ,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="220,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" FontSize="18" FontFamily="Times New Roman"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="220,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="500" FontSize="18" FontFamily="Times New Roman" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.12"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="220,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" FontSize="18" FontFamily="Times New Roman"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="220,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="500" FontSize="18" FontFamily="Times New Roman"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="220,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" FontSize="18" FontFamily="Times New Roman"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="220,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="310"  FontFamily="Times New Roman"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="220,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" FontSize="18" FontFamily="Times New Roman"/>
+        <ListBox HorizontalAlignment="Left" Height="30" Margin="220,255,0,0" VerticalAlignment="Top" Width="500"/>
+        <ListBox HorizontalAlignment="Left" Height="30" Margin="220,295,0,0" VerticalAlignment="Top" Width="500"/>
+
+    </Grid>
+</Window>
