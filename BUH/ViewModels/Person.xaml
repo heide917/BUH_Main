@@ -6,28 +6,16 @@
         xmlns:local="clr-namespace:BUH.ViewModels"
         mc:Ignorable="d"
         
-        Title="МОЛ" Height="450" Width="500">
+        Title="МОЛ" Height="220" Width="500">
     <Grid>
-        
-      
-        
-            <DataGrid Width="485" AutoGenerateColumns="False" HorizontalGridLinesBrush="DarkGray"
-    RowBackground="LightGray" AlternatingRowBackground="White" Margin="0,195,-8,14">
-
-
-
-            <DataGrid.Items>
-
-            </DataGrid.Items>
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="ФИО" Binding="{Binding Path=FullName}" Width="250" FontSize="18" FontFamily="Times New Roman" />
-                <DataGridTextColumn Header="Отдел" Binding="{Binding Path=Department}" Width="100"  FontSize="18" FontFamily="Times New Roman" />
-                <DataGridTextColumn Header="Должность" Binding="{Binding Path=Position}" Width="100"  FontSize="18" FontFamily="Times New Roman" />
-            </DataGrid.Columns>
-        </DataGrid>
-        <StackPanel>
-            
-        </StackPanel>
+        <Label Content="Код" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ф.И.О." HorizontalAlignment="Left" Margin="20,50,0,0" VerticalAlignment="Top"/>
+        <Label Content="Место работы" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="Должность" HorizontalAlignment="Left" Margin="20,110,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="110,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="110,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="365"/>
+        <ListBox HorizontalAlignment="Left" Height="25" Margin="110,80,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="110,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

@@ -109,6 +109,9 @@
     <Compile Include="ViewModels\Inventory.xaml.cs">
       <DependentUpon>Inventory.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\Journal.xaml.cs">
+      <DependentUpon>Journal.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\Person.xaml.cs">
       <DependentUpon>Person.xaml</DependentUpon>
@@ -149,6 +152,10 @@
     <Page Include="ViewModels\Inventory.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewModels\Journal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewModels\Person.xaml">
       <SubType>Designer</SubType>

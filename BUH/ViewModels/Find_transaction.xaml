@@ -18,19 +18,19 @@
                 <TextBlock></TextBlock>
                 <TextBlock></TextBlock>
             </ComboBox>
-            <Label Content="Имя проводки"   Width="170" FontFamily="Times New Roman" FontSize="20"/>
+            <Label Content="Имя проводки"   Width="170"/>
             <TextBox Height="30"    Width="170" TextWrapping="Wrap" Text=""/>
-            <Label Content="Счет дебета"  Width="170" FontFamily="Times New Roman" FontSize="20"/>
-            <TextBox Height="30"    Width="170" TextWrapping="Wrap" Text=""/>
-            <TextBox Height="30"    Width="170" TextWrapping="Wrap" Text=""/>
-            <TextBox Height="30"    Width="170" TextWrapping="Wrap" Text=""/>
-            <Label Content="Счет кредита"  Width="170" FontFamily="Times New Roman" FontSize="20"/>
+            <Label Content="Счет дебета"  Width="170" />
             <TextBox Height="30"    Width="170" TextWrapping="Wrap" Text=""/>
             <TextBox Height="30"    Width="170" TextWrapping="Wrap" Text=""/>
             <TextBox Height="30"    Width="170" TextWrapping="Wrap" Text=""/>
-            <Label Content="Ордер"  Width="70" FontFamily="Times New Roman" FontSize="20"/>
+            <Label Content="Счет кредита"  Width="170" />
+            <TextBox Height="30"    Width="170" TextWrapping="Wrap" Text=""/>
+            <TextBox Height="30"    Width="170" TextWrapping="Wrap" Text=""/>
+            <TextBox Height="30"    Width="170" TextWrapping="Wrap" Text=""/>
+            <Label Content="Ордер"  Width="70"/>
             <TextBox Height="30"    Width="70" TextWrapping="Wrap" Text=""/>
-            <Button Content="ПОИСК" FontSize="20" FontFamily="Times New Roman" Background="#FFE01616"/>
+            <Button Content="ПОИСК" FontSize="20" Background="#FFE01616"/>
         </StackPanel>
             
     </Grid>

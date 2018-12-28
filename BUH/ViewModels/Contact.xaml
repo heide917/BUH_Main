@@ -7,16 +7,18 @@
         mc:Ignorable="d"
         Title="Договора" Height="270" Width="800">
     <Grid>
-        <Label Content="Поставщик" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20"/>
-        <Label Content="Номер договора" HorizontalAlignment="Left" Margin="30,60,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Times New Roman"/>
-        <Label Content="Предмет договора" HorizontalAlignment="Left" Margin="30,90,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Times New Roman"/>
-        <Label Content="Дата начала" HorizontalAlignment="Left" Margin="30,120,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20"/>
-        <Label Content="Дата окончания" HorizontalAlignment="Left" Margin="30,150,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20"/>
-        <ListBox HorizontalAlignment="Left" Height="30" Margin="200,30,0,0" VerticalAlignment="Top" Width="395" FontFamily="Times New Roman" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="200,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Times New Roman" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="200,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="570" FontSize="20" FontFamily="Times New Roman"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="200,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Times New Roman" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="200,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Times New Roman" FontSize="20"/>
+      <Label Style ="{Label}"/>
+      <Listbox Style ="{Label}"/>
+        <Label Content="Поставщик" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top"/>
+        <Label Content="Номер договора" HorizontalAlignment="Left" Margin="30,60,0,0" VerticalAlignment="Top"/>
+        <Label Content="Предмет договора" HorizontalAlignment="Left" Margin="30,90,0,0" VerticalAlignment="Top" />
+        <Label Content="Дата начала" HorizontalAlignment="Left" Margin="30,120,0,0" VerticalAlignment="Top"/>
+        <Label Content="Дата окончания" HorizontalAlignment="Left" Margin="30,150,0,0" VerticalAlignment="Top"/>
+        <ListBox HorizontalAlignment="Left" Height="30" Margin="200,30,0,0" VerticalAlignment="Top" Width="395"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="200,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="200,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="570" />
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="200,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="200,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
 
 
 

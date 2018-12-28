@@ -5,34 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BUH.ViewModels"
         mc:Ignorable="d"
-        Title="Inventort" Height="500" Width="800">
+        Title="Inventory" Height="500" Width="800">
     <Grid>
-        <Label Content="Инвентаргый номер" HorizontalAlignment="Left" Margin="25,25,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="210,25,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="20" FontFamily="Times New Roman"/>
-        <Label Content="Название" HorizontalAlignment="Left" Margin="25,65,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="135,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="605" FontSize="20" FontFamily="Times New Roman"/>
-        <Label Content="Описание" HorizontalAlignment="Left" Margin="25,110,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="135,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="605" FontSize="20" FontFamily="Times New Roman"/>
-        <Label Content="Счет" HorizontalAlignment="Left" Margin="370,25,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Times New Roman"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="425,27,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="20" FontFamily="Times New Roman"/>
-        <Label Content="Производитель" HorizontalAlignment="Left" Margin="25,350,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Times New Roman" Height="30"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="130,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="605" FontFamily="Times New Roman" FontSize="14"/>
-        <Label Content="Дата ввода в эксплуатацию" HorizontalAlignment="Left" Margin="25,160,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="225,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16" FontFamily="Times New Roman"/>
-        <Label Content="Дата списания" HorizontalAlignment="Left" Margin="370,160,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="490,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Times New Roman" FontSize="16"/>
-        <Label Content="Амортизация" HorizontalAlignment="Left" Margin="370,205,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Times New Roman"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="490,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="18" FontFamily="Times New Roman"/>
-        <Label Content="Стоимость" HorizontalAlignment="Left" Margin="25,205,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0" Height="30" FontFamily="Times New Roman" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="130,210,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="18" FontFamily="Times New Roman"/>
-        <Label Content="МОЛ" HorizontalAlignment="Left" Margin="25,250,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Times New Roman"/>
-        <ListBox HorizontalAlignment="Left" Height="30" Margin="130,250,0,0" VerticalAlignment="Top" Width="615" FontFamily="Times New Roman" FontSize="20"/>
-        <Label Content="Поставщик" HorizontalAlignment="Left" Margin="25,295,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Times New Roman"/>
+        <Style TargetType="Label"/>
+        <Label Content="Инвентаргый номер" HorizontalAlignment="Left" Margin="25,25,0,0" VerticalAlignment="Top" />
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="210,25,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+        <Label Content="Название" HorizontalAlignment="Left"  Margin="25,65,0,0" VerticalAlignment="Top" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="135,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="605"  />
+        <Label Content="Описание" HorizontalAlignment="Left" Margin="25,110,0,0" VerticalAlignment="Top" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="135,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="605"/>
+        <Label Content="Счет" HorizontalAlignment="Left" Margin="370,25,0,0" VerticalAlignment="Top" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="425,27,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+        <Label Content="Производитель" HorizontalAlignment="Left" Margin="25,350,0,0" VerticalAlignment="Top" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="130,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="605" />
+        <Label Content="Дата ввода в эксплуатацию" HorizontalAlignment="Left" Margin="25,160,0,0" VerticalAlignment="Top" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="225,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Дата списания" HorizontalAlignment="Left" Margin="370,160,0,0" VerticalAlignment="Top" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="490,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+        <Label Content="Амортизация" HorizontalAlignment="Left" Margin="370,205,0,0" VerticalAlignment="Top" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="490,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+        <Label Content="Стоимость" HorizontalAlignment="Left" Margin="25,205,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0" Height="30" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="130,210,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="МОЛ" HorizontalAlignment="Left" Margin="25,250,0,0" VerticalAlignment="Top" />
+        <ListBox HorizontalAlignment="Left" Height="30" Margin="130,250,0,0" VerticalAlignment="Top" Width="615"/>
+        <Label Content="Поставщик" HorizontalAlignment="Left" Margin="25,295,0,0" VerticalAlignment="Top"/>
         <ListBox HorizontalAlignment="Left" Height="30" Margin="130,295,0,0" VerticalAlignment="Top" Width="365"/>
-        <Label Content="Серия" HorizontalAlignment="Left" Margin="25,390,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Times New Roman"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="85,390,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="14" FontFamily="Times New Roman"/>
-        <Label Content="Единицы измерения" HorizontalAlignment="Left" Margin="370,390,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="505,390,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="135" FontSize="14" FontFamily="Times New Roman"/>
+        <Label Content="Серия" HorizontalAlignment="Left" Margin="25,390,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="85,390,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+        <Label Content="Единицы измерения" HorizontalAlignment="Left" Margin="370,390,0,0" VerticalAlignment="Top" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="505,390,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="135"/>
 
     </Grid>
 </Window>

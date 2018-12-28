@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace BUH.ViewModels
 {
     /// <summary>
-    /// Логика взаимодействия для Inventort.xaml
+    /// Логика взаимодействия для Journal.xaml
     /// </summary>
-    public partial class Inventort : Window
+    public partial class Journal : Window
     {
-        public Inventort()
+        public Journal()
         {
             InitializeComponent();
         }
